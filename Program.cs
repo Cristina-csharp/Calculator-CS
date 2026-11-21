@@ -43,7 +43,10 @@ namespace CalculatorCS
                         Console.WriteLine($"Rezultat: {a} * {b} = {a * b}");
                         break;
                     case "/":
-                        Console.WriteLine($"Rezultat: {a} / {b} = {a / b}");
+                        if (b == 0)
+                            Console.WriteLine("Eroare: impartirea la zero este imposibila!");
+                        else
+                            Console.WriteLine($"Rezultat: {a} / {b} = {a / b}");
                         break;
                     default:
                         Console.WriteLine("Operatie necunoscuta.");
