@@ -39,6 +39,12 @@ namespace CalculatorCS
                     case "-":
                         Console.WriteLine($"Rezultat: {a} - {b} = {a - b}");
                         break;
+                    case "*":
+                        Console.WriteLine($"Rezultat: {a} * {b} = {a * b}");
+                        break;
+                    case "/":
+                        Console.WriteLine($"Rezultat: {a} / {b} = {a / b}");
+                        break;
                     default:
                         Console.WriteLine("Operatie necunoscuta.");
                         break;
